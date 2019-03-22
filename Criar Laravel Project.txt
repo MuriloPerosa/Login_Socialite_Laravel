@@ -1,0 +1,13 @@
+CRIAR PEOJETO LARAVEL
+
+composer create-project --prefer-dist laravel/laravel teste_de_ambiente
+composer require "acacha/admin-lte-template-laravel:4.*"
+/*
+ * Acacha AdminLTE template provider
+ */
+Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
+/*
+ * Acacha AdminLTE template alias
+ */
+'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
+php artisan vendor:publish --tag=adminlte --force
